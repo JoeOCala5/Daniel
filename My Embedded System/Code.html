@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+<head>
+<title> My Code for the Embedded System </title>
+<style> 
+p {
+	font-size: 20px;
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: Comfortaa;
+	margin: 20px;
+}
+h1 { 
+	font-size: 35px;
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: Comfortaa;
+	margin: 20px;
+}
+h2 {
+	font-size: 28px;
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: Comfortaa;
+	margin: 20px;
+}
+h3 {
+	font-size: 15px;
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: Comfortaa;
+}
+a {
+	font-size: 20px;
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: Comfortaa;
+}
+ul {
+	font-size: 18px;
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: Comfortaa;
+	margin: 20px;
+}
+li {
+	font-size: 20px;
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: Comfortaa;
+	margin: 20px;
+}
+img { 
+	image-align: justify;
+	text-justify: inter-word;
+	display: block;
+	float: none;
+	margin: 0px;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+body {
+	background-color: PowderBlue;
+}
+</style>
+</head>
+<body>
+ <h1>The Code Used </h1>
+<div class="row">
+  <div class="column">
+ <h2>What is the code & What it does </h2>
+<p> The main code is in the image next to this text but I will go through important lines of code and what they mean, and if you can change them</p>
+<ul>
+	<li> Void setup ()</li>
+	<ul> 
+	<li> Allows for the system to get directions before the code is started, Set up before beginning the program  </li>
+	</ul>
+	<li>Serial.begin(9600) </li>
+	<ul> 
+	<li> Allows for us to know the baud rate, for this program its 9600 baud.</li>
+	</ul>
+	<li>pinMode(7, OUTPUT) </li>
+	<ul> 
+	<li> Allows for us to see where the voltage is going to go, input 7 and where is is leaving, in Output, the GND section </li>
+	</ul>
+	<li> void loop() </li>
+	<ul> 
+	<li> Allows the code to repeat again and again</li>
+	</ul>
+	<li> int val;</li>
+	<ul> 
+	<li> Makes it so any number input is an interger</li>
+	</ul>
+	<li> val=analogRead(0) </li>
+	<ul> 
+	<li> Reads the valuse of the corresponding anologue pin </li>
+	</ul>
+	<li> Serial.print1n(val,DEC);//</li>
+	<ul> 
+	<li> the first part sends teh data to a serial model, Val allow for the program to know what you want to print, DEC allows the arduino to see we want it in decimal form </li>
+	</ul>
+	<li> delay(100)</li>
+	<ul> 
+	<li> Delays the light going on for 100 miliseconds </li>
+	</ul>
+	<li> if (val>10)</li>
+	<ul> 
+	<li> if the value surpasses 10</li>
+	</ul>
+	<li> digitalWrite(7, HIGH) </li>
+	<ul> 
+	<li> Then a high voltage goes into pin 7; LED on</li>
+	</ul>
+	<li> else </li>
+	<ul> 
+	<li>  Or else </li>
+	</ul>
+	<li> DigitalWrite (7,LOW) </li>
+	<ul> 
+	<li> A low voltage goes into the point; LED off </li>
+	</ul>
+</ul>
+<a href="file:///C:/Users/User/Documents/LC%20Computer%20Science/My%20Embedded%20System/Steps%20to%20make%20the%20embeded%20system.html"  target="_self"> Return </a>
+
+  </div>
+  <div class="column">
+	<img src="Code1.png" alt="black-jumper-wire-placement" width="100%" height="500">
+	<h3> The code that is supposed to be used & the format used </h3>
+  </div>
+</div>
+</body>
+</html>

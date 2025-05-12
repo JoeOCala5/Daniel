@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+<head>
+<title> Steps to Create the Pressure Activated LED </title>
+<style> 
+p {
+	font-size: 20px;
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: Comfortaa;
+	margin: 20px;
+}
+h1 { 
+	font-size: 35px;
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: Comfortaa;
+	margin: 20px;
+}
+h2 {
+	font-size: 28px;
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: Comfortaa;
+	margin: 20px;
+}
+h3 {
+	font-size: 15px;
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: Comfortaa;
+}
+a {
+	font-size: 20px;
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: Comfortaa;
+}
+li {
+	font-size: 18px;
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: Comfortaa;
+	margin: 20px;
+}
+ol {
+	font-size: 20px;
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: Comfortaa;
+	margin: 20px;
+}
+img { 
+	image-align: justify;
+	text-justify: inter-word;
+	display: block;
+	float: none;
+	margin: 0px;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+body {
+	background-color: PowderBlue;
+}
+a {
+	font-size: 20px;
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: Comfortaa;
+}
+</style>
+</head>
+<body>
+<h1> Steps to Create the Pressure Activated LED </h1>
+<div class="row">
+  <div class="column">
+		<ol>
+		<li> Get out your equipment</li> 
+		<li> Place the white end of the Connection Cable in the white part of the sensor</li>
+		<li> Place a black jumper wire where the black wire is in the Connection wire is, a blue wire where the other blue wire is and a red wire where the other red wire is.</li>
+		<li> Place the other end of the black jumper wire in the GND (Ground) section of the Arduino Uno </li>
+		<li> Place the other end of the blue jumper wire in A0 spot of the Arduino UNO </li>
+		<li> Place the other end of the red jumper wire in either the V5 or V3.3 in the Arduino UNO depending on how much voltage you want </li>
+		<li> Now, get your LED and resistor and coil on of the resistors legs around the LED's longest leg.
+		<li> Place the resistors free leg in PIN 7 and place the shorter LED leg in the GND (Ground) section. </li>
+		<li> Plug in the USB A into your computer and the USB type B into the Arduino UNO </li>
+		<li> Load up the Arduino IDE and use the following <a href="file:///C:/Users/User/Documents/LC%20Computer%20Science/My%20Embedded%20System/Code.html" target="_self">code (Click Here)</a></li>
+		<li> Verify the Code and Upload the Code to the Arduino UNO </li>
+		<li> Press on the metal disk and if it goes above ten the LED will go off </li>
+		<li> P.S. you can change the value of the by changing the 10 of [if (val > 10) { ] to what ever figure you want</li>
+</ol>
+<a href="file:///C:/Users/User/Documents/LC%20Computer%20Science/My%20Embedded%20System/My%20Embedded%20System.html" target="_self">1</a>
+
+<a href="file:///C:/Users/User/Documents/LC%20Computer%20Science/My%20Embedded%20System/Steps%20to%20make%20the%20embeded%20system.html"  target="_self">2 (Current Page)</a>
+
+<a href="file:///C:/Users/User/Documents/LC%20Computer%20Science/My%20Embedded%20System/How%20it%20works%20and%20what%20it%20can%20be%20used%20for.html" target="_self">3</a>
+
+<a href="file:///C:/Users/User/Documents/LC%20Computer%20Science/My%20Embedded%20System/Conclusion.html" target="_self">4</a>
+  </div>
+  <div class="column">
+	<img src="Black Wire.jpg" alt="black-jumper-wire-placement" width="500" height="300">
+	<h3> Where the Black jumper wire is supposed to be put. </h3>
+	<img src="Blue Wire.jpg" alt="black-jumper-wire-placement" width="500" height="300">
+	<h3> Where the Blue jumper wire is supposed to be put. </h3>
+	<img src="Red Wire.jpg" alt="black-jumper-wire-placement" width="500" height="300">
+	<h3> Where the Red jumper wire is supposed to be put. </h3>
+	<img src="LED and Resistor Placement.jpg" alt="black-jumper-wire-placement" width="500" height="300">
+	<h3> Where the LED and Resistor is supposed to be put. </h3>
+   </div>
+</div> 
+</body>
+</html>
